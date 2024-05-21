@@ -1,0 +1,25 @@
+/* Chrome */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00ADB5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #393E46;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #434852; 
+}
+
+/* Firefox */
+@supports (-moz-appearance:none) {
+  html {
+    scrollbar-color: #00ADB5 #393E46;
+    scrollbar-width: thin;
+  }
+}
