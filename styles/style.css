@@ -38,7 +38,7 @@ main {
   background-color: var(--cor-primaria);
   width: 100%;
   padding: 2% 10% 2% 10%;
-  box-shadow: 0px 2px 0px var(--cor-terciaria);
+  border-bottom: 2.2px solid var(--cor-terciaria);
   z-index: 1000;
 }
 
@@ -183,7 +183,7 @@ b {
   font-family: var(--font-secundaria);
   font-size: 1rem;
   font-weight: 400;
-  box-shadow: 0px -2px 0px 0px var(--cor-hover);
+  border-top: 2.2px solid var(--cor-hover);
 }
 
 .rodape__centralizado {
@@ -270,13 +270,14 @@ b {
 .skill__item-extra {
   text-align: center;
   transition: transform 0.6s ease;
+  margin: 0% 5% 0% 5%;
 }
 
 .skill__imagem,
 .skill__imagem-extra {
   transition: transform 0.6s ease, opacity 0.3s;
-  width: 96px;
   height: auto;
+  width: 96px;
 }
 
 .skill__texto,
@@ -335,10 +336,15 @@ b {
 }
 
 @media (max-width: 580px) {
+  .cabecalho__menu {
+    row-gap: 4px;
+    margin-bottom: 4px;
+  }
+
   .apresentacao__conteudo__titulo {
     font-size: 2.2rem;
     text-wrap: balance;
-    margin-top: 26%;
+    margin-top: 35%;
   }
 
   .home .apresentacao__conteudo__titulo {
@@ -355,7 +361,12 @@ b {
   }
 
   .skill__botoes {
-    justify-content: center; 
+    justify-content: center;
+  }
+
+  .skill__item,
+  .skill__item-extra {
+    margin: 0% 0% 0% 0%;
   }
 
   .skill__item {
@@ -377,7 +388,7 @@ b {
     justify-content: center;
     align-items: center;
   }
-  
+
   .rodape .alura {
     position: static;
     margin-top: 14px;
@@ -402,7 +413,7 @@ b {
   .apresentacao {
     flex-direction: column-reverse;
     padding: 5%;
-    gap: 40px;
+    gap: 20px;
   }
 
   .apresentacao__conteudo {
@@ -431,6 +442,7 @@ b {
     order: 2;
     margin-top: 10%;
     margin-bottom: -5%;
+    gap: 22px;
   }
 
   .skill_organizacao .apresentacao__imagem__skill,
