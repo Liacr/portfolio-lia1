@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Lianna Ribeiro</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/scroll.css">
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link anim"><b>.</b><span class="anim-fixo"></span> <b>{}</b></a>
+      <button class="burger-menu" id="burger-menu">
+        <span class="burger-menu__line"></span>
+        <span class="burger-menu__line"></span>
+        <span class="burger-menu__line"></span>
+      </button>
+      <div class="cabecalho__menu__links" id="nav-links">
+        <a class="cabecalho__menu__link" href="index.html">.Home</a>
+        <a class="cabecalho__menu__link" href="skills.html">.Habilidades</a>
+        <a class="cabecalho__menu__link" href="projetos.html">.Projetos</a>
+      </div>
+    </nav>
+  </header>  
+
+  <main class="apresentacao skill_organizacao">
+    <section class="apresentacao__conteudo">
+      <h1 class="apresentacao__conteudo__titulo"><b class="tag-especial">&lt;h1&gt;</b><br>
+        Minhas<br> Habilidades <b class="tag-texto">&lt;/h1&gt;</b></h1>
+
+      <p class="apresentacao__conteudo__texto"><b class="tag-especial">&lt;p&gt;</b><br>Atualmente estudo <strong
+          class="destaques">HTML, CSS e JavaScript</strong>. Em breve, pretendo expandir minhas habilidades para <strong
+          class="destaques">ReactJS</strong>. <b class="tag-texto">&lt;/p&gt;</b></p>
+
+      <p class="apresentacao__conteudo__texto__extra hidden"><b class="tag-especial">&lt;p&gt;</b><br>Sou <strong
+          class="destaques">ilustradora e designer de interfaces</strong>. Também tenho experiência com criação de
+        produtos. <b class="tag-texto">&lt;/p&gt;</b></p>
+
+      <div class="skill__botoes">
+        <button class="botao botao-front-end">Front-end</button>
+        <button class="botao botao-ux-ui">UX/UI Design</button>
+      </div>
+
+    </section>
+
+    <div class="apresentacao__imagem__skill">
+      <div class="skill__item">
+        <img class="skill__imagem" src="./assets/htmlOff.svg" alt="HTML Logo">
+        <span class="skill__texto">HTML</span>
+      </div>
+      <div class="skill__item">
+        <img class="skill__imagem" src="./assets/cssOff.svg" alt="CSS Logo">
+        <span class="skill__texto">CSS</span>
+      </div>
+      <div class="skill__item">
+        <img class="skill__imagem" src="./assets/javaOff.svg" alt="JS Logo">
+        <span class="skill__texto">JavaScript</span>
+      </div>
+      <div class="skill__item">
+        <img class="skill__imagem" src="./assets/reactOff.svg" alt="REACT Logo">
+        <span class="skill__texto">React</span>
+      </div>
+    </div>
+
+    <div class="apresentacao__imagem__extra hidden">
+      <div class="skill__item skill__item-extra">
+        <img class="skill__imagem skill__imagem-extra" src="./assets/photoshopOff.svg" alt="Photoshop Logo">
+        <span class="skill__texto skill__texto-extra">Photoshop</span>
+      </div>
+      <div class="skill__item skill__item-extra">
+        <img class="skill__imagem skill__imagem-extra" src="./assets/illustratorOff.svg" alt="Illustrator Logo">
+        <span class="skill__texto skill__texto-extra">Illustrator</span>
+      </div>
+      <div class="skill__item skill__item-extra">
+        <img class="skill__imagem skill__imagem-extra" src="./assets/figmaOff.svg" alt="Figma Logo">
+        <span class="skill__texto skill__texto-extra">Figma</span>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape__centralizado">
+      <div class="rodape__conteudo">
+        <a class="rodape__link" href="mailto:liannacr23@gmail.com">
+          <img src="./assets/mail.svg" alt="Ícone de e-mail"> Contato
+        </a>
+        <p>Desenvolvido por Lianna Ribeiro</p>
+      </div>
+    </div>
+    <a href="https://www.alura.com.br/empresas/include">
+      <img class="alura" src="./assets/alura.svg" alt="Logo Alura Include">
+    </a>
+  </footer>
+
+  <script src="./scripts/menuNavAtivo.js"></script>
+  <script src="./scripts/selecaoHabilidades.js"></script>
+  <script src="./scripts/corSkillMuda.js"></script>
+  <script src="./scripts/navBar.js"></script>
+
+</body>
+
+</html>
