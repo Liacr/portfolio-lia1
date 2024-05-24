@@ -16,7 +16,7 @@ function mostrarFrontEnd() {
 
   // Reinitialize o AOS após alternar as habilidades
   AOS.init({
-    offset: 200,
+    offset: 100,
     duration: 600,
     easing: 'ease-in-out',
     delay: 100
@@ -34,7 +34,7 @@ function mostrarUxUi() {
 
   // Reinitialize o AOS após alternar as habilidades
   AOS.init({
-    offset: 200,
+    offset: 100,
     duration: 600,
     easing: 'ease-in-out',
     delay: 100
