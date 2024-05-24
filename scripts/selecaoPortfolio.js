@@ -81,13 +81,6 @@ function reanimarElemento(elemento) {
   }, 50); // Tempo suficiente para reanimação
 }
 
-AOS.init({
-  offset: 160,
-  duration: 600,
-  easing: 'ease-in-out',
-  delay: 100
-});
-
 mostrarFrontEnd();
 
 botaoFrontEnd.addEventListener('click', mostrarFrontEnd);
