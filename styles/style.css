@@ -428,6 +428,7 @@ b {
   .apresentacao__imagem img {
     width: 100%;
     height: auto;
+    margin-top: 20%;
   }
 
   .apresentacao__imagem__skill {

@@ -55,19 +55,34 @@ function trocarProjeto() {
 // Função para atualizar a visibilidade dos projetos
 function atualizarVisibilidadeProjeto(projetos) {
   projetos.forEach((projeto, index) => {
-    projeto.classList.toggle('hidden', index !== currentProjetoIndex);
+    const isVisible = index === currentProjetoIndex;
+    projeto.classList.toggle('hidden', !isVisible);
+    if (isVisible) {
+      reanimarElemento(projeto);
+    }
   });
 }
 
 // Função para atualizar a visibilidade dos textos
 function atualizarVisibilidadeTexto(textos) {
   textos.forEach((texto, index) => {
-    texto.classList.toggle('hidden', index !== currentProjetoIndex);
+    const isVisible = index === currentProjetoIndex;
+    texto.classList.toggle('hidden', !isVisible);
+    if (isVisible) {
+      reanimarElemento(texto);
+    }
   });
 }
 
+function reanimarElemento(elemento) {
+  elemento.classList.remove('aos-animate'); // Remove a classe de animação
+  setTimeout(() => {
+    elemento.classList.add('aos-animate'); // Adiciona novamente a classe de animação
+  }, 50); // Tempo suficiente para reanimação
+}
+
 AOS.init({
-  offset: 200,
+  offset: 160,
   duration: 600,
   easing: 'ease-in-out',
   delay: 100
@@ -77,5 +92,4 @@ mostrarFrontEnd();
 
 botaoFrontEnd.addEventListener('click', mostrarFrontEnd);
 botaoUxUi.addEventListener('click', mostrarUxUi);
-
 setaNext.addEventListener('click', trocarProjeto);
