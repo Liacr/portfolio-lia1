@@ -19,6 +19,8 @@ function mostrarFrontEnd() {
   atualizarVisibilidadeProjeto(projetosFrontEnd);
   textosUxUi.forEach(texto => texto.classList.add('hidden'));
   projetosUxUi.forEach(projeto => projeto.classList.add('hidden'));
+  // Atualiza as animações do AOS para os novos elementos visíveis
+  AOS.refresh();
 }
 
 function mostrarUxUi() {
@@ -31,9 +33,11 @@ function mostrarUxUi() {
   atualizarVisibilidadeProjeto(projetosUxUi);
   textosFrontEnd.forEach(texto => texto.classList.add('hidden'));
   projetosFrontEnd.forEach(projeto => projeto.classList.add('hidden'));
+  // Atualiza as animações do AOS para os novos elementos visíveis
+  AOS.refresh();
 }
 
-// Função para trocar a imagem do projeto
+// Função para trocar o projeto
 function trocarProjeto() {
   if (currentCategory === 'front-end') {
     currentProjetoIndex = (currentProjetoIndex + 1) % projetosFrontEnd.length;
@@ -44,6 +48,8 @@ function trocarProjeto() {
     atualizarVisibilidadeProjeto(projetosUxUi);
     atualizarVisibilidadeTexto(textosUxUi);
   }
+  // Atualiza as animações do AOS para os novos elementos visíveis
+  AOS.refresh();
 }
 
 // Função para atualizar a visibilidade dos projetos
@@ -59,6 +65,13 @@ function atualizarVisibilidadeTexto(textos) {
     texto.classList.toggle('hidden', index !== currentProjetoIndex);
   });
 }
+
+AOS.init({
+  offset: 200,
+  duration: 600,
+  easing: 'ease-in-out',
+  delay: 100
+});
 
 mostrarFrontEnd();
 

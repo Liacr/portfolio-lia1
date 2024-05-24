@@ -13,6 +13,14 @@ function mostrarFrontEnd() {
   textoUxUi.classList.add('hidden');
   imagemSkillFrontEnd.classList.remove('hidden');
   imagemSkillUxUi.classList.add('hidden');
+
+  // Reinitialize o AOS após alternar as habilidades
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-out',
+    delay: 100
+  });
 }
 
 function mostrarUxUi() {
@@ -23,6 +31,14 @@ function mostrarUxUi() {
   textoUxUi.classList.remove('hidden');
   imagemSkillFrontEnd.classList.add('hidden');
   imagemSkillUxUi.classList.remove('hidden');
+
+  // Reinitialize o AOS após alternar as habilidades
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: 'ease-in-out',
+    delay: 100
+  });
 }
 
 mostrarFrontEnd();

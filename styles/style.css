@@ -144,15 +144,15 @@ b {
   justify-content: center;
   align-items: center;
   width: 10%;
-  transition: transform 0.3s;
 }
 
 .apresentacao__links__navegacao img {
   width: 40px;
   height: 40px;
+  transition: transform 0.3s;
 }
 
-.apresentacao__links__navegacao:hover {
+.apresentacao__links__navegacao img:hover {
   transform: scale(1.2);
 }
 
